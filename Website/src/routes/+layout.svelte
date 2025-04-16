@@ -49,6 +49,7 @@
         max-height: 20%;
         margin: 0 auto;
         padding: 0 1.5rem;
+        transition: none;
 	}
 	footer {
 		color: var(--text-primary-color);

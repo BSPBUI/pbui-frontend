@@ -39,7 +39,12 @@
             <ul>
                 <li>
                     <a href="/" class:active={page.url.pathname === '/'}>
-                        Playlists
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/tournaments" class:active={page.url.pathname === '/tournaments'}>
+                        Tournaments
                     </a>
                 </li>
                 <li>
@@ -72,7 +77,8 @@
         background-color: var(--surface-alt-color);
         transition:
             box-shadow 0.3s ease,
-            backdrop-filter 0.3s ease;
+            backdrop-filter 0.3s ease,
+            background-color 0.25s ease;
     }
     header.scrolled {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -103,6 +109,9 @@
         border-radius: 0.5rem;
         z-index: 101;
         text-align: center;
+        transition: 
+            color 0.25s ease,
+            border-color 0.25s ease;
     }
 
     nav {
@@ -129,6 +138,7 @@
         font-weight: 600;
         text-align: center;
         padding: 0.5rem 1rem;
+        border: 1px solid transparent;
         border-radius: 2rem;
         transition:
             color 0.2s ease,

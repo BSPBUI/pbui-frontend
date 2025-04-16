@@ -28,5 +28,8 @@ export default defineConfig({
 				}
 			}
 		]
-	}
+	},
+    server: {
+        allowedHosts: ['pbui.ultraslayyy.xyz']
+    }
 });
